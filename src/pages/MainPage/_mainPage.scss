@@ -1,0 +1,38 @@
+.mainContainer {
+  .logo {
+    width: 25rem;
+    position: fixed;
+    top: 2rem;
+  }
+
+  .title {
+    color: white;
+    width: 25rem;
+    margin: 0 auto;
+    margin-top: 35vh;
+    text-align: center;
+
+    .subTitle {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .underLine {
+      height: 5px;
+      background-color: #fff;
+    }
+  }
+
+  .buttonBar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    width: 50rem;
+    margin: auto;
+    margin-top: 5rem;
+
+    .MuiButton-contained {
+      width: 10rem;
+    }
+  }
+}

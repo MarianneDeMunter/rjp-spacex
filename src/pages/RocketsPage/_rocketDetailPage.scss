@@ -1,0 +1,21 @@
+.rocketContainer {
+  .rocketCard {
+    background: #fff;
+    background: -webkit-linear-gradient(
+      to top right,
+      hsla(0, 0%, 100%, 0.6),
+      hsla(0, 0%, 100%, 0.8)
+    );
+    background: linear-gradient(
+      to top right,
+      hsla(0, 0%, 100%, 0.6),
+      hsla(0, 0%, 100%, 0.8)
+    );
+    width: 95vw;
+    margin: auto;
+
+    h1 {
+      text-align: center;
+    }
+  }
+}

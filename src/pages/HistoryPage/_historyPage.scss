@@ -1,0 +1,67 @@
+.historyContainer {
+  .cardFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: auto;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+    .cardFront {
+      p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+    }
+
+    .cardBack {
+      p {
+        font-size: small;
+        overflow-y: auto;
+        height: 150px;
+      }
+    }
+
+    .cardContainer {
+      background: #fff;
+      background: -webkit-linear-gradient(
+        to top right,
+        hsla(0, 0%, 100%, 0.6),
+        hsla(0, 0%, 100%, 0.8)
+      );
+      background: linear-gradient(
+        to top right,
+        hsla(0, 0%, 100%, 0.6),
+        hsla(0, 0%, 100%, 0.8)
+      );
+      width: 16rem;
+      height: 20rem;
+      display: grid;
+      grid-template-rows: 1fr min-content;
+
+      .cardContent {
+        padding: 1rem;
+      }
+
+      .bottomRow {
+        .flipButton {
+          margin-left: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .historyContainer {
+    .cardFlex {
+      .cardContainer {
+        width: 100%;
+      }
+    }
+  }
+}
